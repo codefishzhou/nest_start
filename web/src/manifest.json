@@ -91,6 +91,7 @@
                 }
             }
         },
+        "publicPath": "/nest_start/",
         "title" : ""
     },
     "router" : {
