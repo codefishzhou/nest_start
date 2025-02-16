@@ -8,7 +8,7 @@ import mixin from './libs/mixin/mixin.js'
 // 小程序特有的mixin
 import mpMixin from './libs/mixin/mpMixin.js'
 // 全局挂载引入http相关请求拦截插件
-import Request from './libs/luch-request'
+import Request from './libs/luch-request/index.js'
 
 // 路由封装
 import route from './libs/util/route.js'
@@ -33,7 +33,7 @@ import zIndex from './libs/config/zIndex.js'
 // 关于颜色的配置，特殊场景使用
 import color from './libs/config/color.js'
 // 平台
-import platform from './libs/function/platform'
+import platform from './libs/function/platform.js'
 
 const $u = {
     route,

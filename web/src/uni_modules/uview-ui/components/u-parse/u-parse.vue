@@ -39,10 +39,8 @@
  * @event {Function}	error	媒体加载出错时触发
  */
 const plugins=[]
-const parser = require('./parser')
-// #ifndef APP-PLUS-NVUE
-import node from './node/node'
-// #endif
+const parser = require('./par./parser.js #ifndef APP-PLUS-NVUE
+import node from './nod./node/node.js#endif
 // #ifdef APP-PLUS-NVUE
 const dom = weex.requireModule('dom')
 // #endif

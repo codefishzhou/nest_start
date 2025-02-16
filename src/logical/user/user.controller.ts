@@ -39,7 +39,12 @@ export class UserController {
   async all() {
     // 固定了返回结构~
     const r = new XCommonRet();
-    r.setData(await this.userService.findAll());
+    r.setData((await this.userService.findAll()).map(item=>{
+      return {
+        ...item,
+        password: undefined
+      }
+    }));
     return r;
   }
 

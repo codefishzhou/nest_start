@@ -1,5 +1,6 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
+import { OriginGuard } from './guard/origin.guard';
 import { TransformInterceptor } from './logical/interceptor/transform.interceptor';
 
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
@@ -9,7 +10,9 @@ async function bootstrap() {
   const isDev = process.env.NODE_ENV === 'development';
   const app = await NestFactory.create(AppModule);
   app.setGlobalPrefix('worknotes');
-  app.useGlobalInterceptors(new TransformInterceptor());
+  !isDev &&app.useGlobalInterceptors(new TransformInterceptor()); // 全局注册拦截器
+  // 全局注册守卫
+  app.useGlobalGuards(new OriginGuard());
   app.enableCors();
   const options = new DocumentBuilder()
     .setTitle('worknotes')
