@@ -6,6 +6,9 @@ import { UserModule } from '../user/user.module';
 import { PassportModule } from '@nestjs/passport';
 import { JwtModule } from '@nestjs/jwt';
 import { UserService } from '../user/user.service';
+import { APP_GUARD } from '@nestjs/core';
+import { DevAuthGuard } from './auth.guard';
+import { AuthGuard } from '@nestjs/passport';
 
 @Module({
   imports: [
@@ -16,7 +19,17 @@ import { UserService } from '../user/user.service';
     }),
     UserModule
   ],
-  providers: [AuthService, JwtStrategy,UserService],
+  providers: [
+    AuthService,
+    JwtStrategy,
+    UserService,
+    {
+      provide: APP_GUARD,
+      useClass: process.env.NODE_ENV === 'development' 
+        ? DevAuthGuard 
+        : AuthGuard('jwt')
+    }
+  ],
   exports: [AuthService],
 })
 export class AuthModule {}
