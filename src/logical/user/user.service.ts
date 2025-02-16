@@ -13,7 +13,6 @@ import { UsersEntity } from '../../entity/users.entity';
 import { CreateUserDto } from './create-user-dto';
 import { DeleteUserDto } from './delete-user-dto';
 import { LoginUserDto } from './login-user-dto';
-import { jwtConstants } from '../auth/constants';
 import { encryptPassword } from '../../utils/cryptogram';
 
 @Injectable()

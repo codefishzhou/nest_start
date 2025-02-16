@@ -3,7 +3,6 @@ import { Injectable } from '@nestjs/common';
 import { UserService } from '../user/user.service';
 import { JwtService } from '@nestjs/jwt';
 import { encryptPassword } from '../../utils/cryptogram';
-import { jwtConstants } from './constants';
 
 @Injectable()
 export class AuthService {
@@ -49,16 +48,12 @@ export class AuthService {
     const payload = {
       username: user.name, sub: user.password, realName: user.id, role: user.status
     };
-    let obj = {
-      header:'',
-      payload:payload,
-      secret:process.env.JWT_SECRET_KEY,
-      encoding:"utf-8",
-      secretOrPrivateKey: process.env.JWT_SECRET_KEY,
-    }
-    console.log('JWT验证 - Step 3: 处理 jwt 签证', obj);
+    console.log('JWT验证 - Step 3: 处理 jwt 签证', payload);
     try {
-      const token = this.jwtService.sign(JSON.stringify(obj));
+      const token = this.jwtService.sign(payload, { 
+        secret: process.env.JWT_SECRET_KEY,
+        algorithm: 'HS256'
+      });
       console.log(token,'token')
       return {
         code: 200,
