@@ -14,6 +14,8 @@ import { CreateUserDto } from './create-user-dto';
 import { DeleteUserDto } from './delete-user-dto';
 import { LoginUserDto } from './login-user-dto';
 import { encryptPassword } from '../../utils/cryptogram';
+import { HashUtil } from '../../common/utils/hash.util';
+
 
 @Injectable()
 export class UserService {
@@ -85,9 +87,11 @@ export class UserService {
       .execute(); //执行
   }
   async create(LoginUserDto: LoginUserDto): Promise<any> {
-    const {name,password} = LoginUserDto
-    let hardPassword = encryptPassword(password,process.env.JWT_SALT)
-    return await this.usersRepository.save({password:hardPassword,name});
+    const {name, password} = LoginUserDto
+    const md5Password = HashUtil.md5(password)
+    console.log(md5Password, password,  '--md5Password')
+    let hardPassword = encryptPassword(md5Password,process.env.JWT_SALT)
+    return await this.usersRepository.save({password: hardPassword, name});
   }
   //  更新数据
   async update(updateUserDate): Promise<any> {

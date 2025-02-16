@@ -32,7 +32,7 @@ export class UserController {
   ) {}
 
   // 此时访问的路径为user/all
-  @UseGuards(AuthGuard('jwt')) // 使用 'JWT' 进行验证
+   // 使用 'JWT' 进行验证
   @Get('all')
   @ApiOperation({ summary: '获取所有用户' })
   @HttpCode(200)
@@ -44,7 +44,7 @@ export class UserController {
   }
 
   
-  @UseGuards(AuthGuard('jwt')) // 使用 'JWT' 进行验证
+   // 使用 'JWT' 进行验证
   @ApiTags('users')
   @Get(':id')
   @ApiOperation({ summary: '根据id获取用户' })
@@ -55,7 +55,7 @@ export class UserController {
   }
 
   
-  @UseGuards(AuthGuard('jwt')) // 使用 'JWT' 进行验证
+   // 使用 'JWT' 进行验证
   @ApiTags('users')
   @HttpCode(200)
   @Post('create')
@@ -65,7 +65,7 @@ export class UserController {
   }
 
   
-  @UseGuards(AuthGuard('jwt')) // 使用 'JWT' 进行验证
+   // 使用 'JWT' 进行验证
   @ApiTags('users')
   @Post('find-by-name')
   @ApiOperation({ summary: '根据name获取用户' })
@@ -101,7 +101,7 @@ export class UserController {
   }
 
   
-  @UseGuards(AuthGuard('jwt')) // 使用 'JWT' 进行验证
+   // 使用 'JWT' 进行验证
   @ApiTags('user')
   @Post('verity')
   @HttpCode(200)
@@ -112,7 +112,7 @@ export class UserController {
   }
 
   
-  @UseGuards(AuthGuard('jwt')) // 使用 'JWT' 进行验证
+   // 使用 'JWT' 进行验证
   @ApiTags('users')
   @Delete('delete')
   @ApiOperation({ summary: '删除用户' })
@@ -122,7 +122,7 @@ export class UserController {
   }
 
   //修改用户
-  @UseGuards(AuthGuard('jwt')) // 使用 'JWT' 进行验证
+   // 使用 'JWT' 进行验证
   @ApiTags('users')
   @Post(':id')
   @HttpCode(200)

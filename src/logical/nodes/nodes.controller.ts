@@ -26,7 +26,7 @@ export class NodesController {
   constructor(private readonly NodesService: NodesService) {}
 
   
-  @UseGuards(AuthGuard('jwt')) // 使用 'JWT' 进行验证
+   // 使用 'JWT' 进行验证
   @ApiTags('nodes')
   @Post('create')
   @HttpCode(200)
@@ -36,7 +36,7 @@ export class NodesController {
   }
 
   
-  @UseGuards(AuthGuard('jwt')) // 使用 'JWT' 进行验证
+   // 使用 'JWT' 进行验证
   @Get('all')
   @ApiTags('nodes')
   @ApiOperation({ summary: '获取所有记录' })
@@ -49,7 +49,7 @@ export class NodesController {
   }
 
   
-  @UseGuards(AuthGuard('jwt')) // 使用 'JWT' 进行验证
+   // 使用 'JWT' 进行验证
   @Post('get-by-month')
   @ApiTags('nodes')
   @ApiOperation({ summary: '根据月分获取记录' })
@@ -62,7 +62,7 @@ export class NodesController {
   }
 
   
-  @UseGuards(AuthGuard('jwt')) // 使用 'JWT' 进行验证
+   // 使用 'JWT' 进行验证
   @Post('export')
   @ApiTags('nodes')
   @ApiOperation({ summary: '导出记录' })
@@ -91,7 +91,7 @@ export class NodesController {
   }
 
   
-  @UseGuards(AuthGuard('jwt')) // 使用 'JWT' 进行验证
+   // 使用 'JWT' 进行验证
   @ApiTags('nodes')
   @Delete('delete')
   @ApiOperation({ summary: '删除记录' })
@@ -101,7 +101,7 @@ export class NodesController {
   }
 
   //编辑接口切记放在最下面
-  @UseGuards(AuthGuard('jwt')) // 使用 'JWT' 进行验证
+   // 使用 'JWT' 进行验证
   @ApiTags('nodes')
   @HttpCode(200)
   @Post(':id')
