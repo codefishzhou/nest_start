@@ -87,7 +87,7 @@ export class UserService {
   }
   async create(LoginUserDto: LoginUserDto): Promise<any> {
     const {name,password} = LoginUserDto
-    let hardPassword = encryptPassword(password,jwtConstants.salt)
+    let hardPassword = encryptPassword(password,process.env.JWT_SALT)
     return await this.usersRepository.save({password:hardPassword,name});
   }
   //  更新数据

@@ -18,7 +18,7 @@ export class AuthService {
     const user = await this.usersService.findOneByName(name);
     if (user) {
       const hashedPassword = user.password;
-      const salt = jwtConstants.salt;
+      const salt = process.env.JWT_SALT;
       // 通过密码盐，加密传参，再与数据库里的比较，判断是否相等
       const hashPassword = encryptPassword(password, salt);
       if (hashedPassword === hashPassword) {
@@ -52,11 +52,11 @@ export class AuthService {
     let obj = {
       header:'',
       payload:payload,
-      secret:jwtConstants.secret,
+      secret:process.env.JWT_SECRET_KEY,
       encoding:"utf-8",
-      secretOrPrivateKey:jwtConstants.secret,
+      secretOrPrivateKey: process.env.JWT_SECRET_KEY,
     }
-    console.log('JWT验证 - Step 3: 处理 jwt 签证');
+    console.log('JWT验证 - Step 3: 处理 jwt 签证', obj);
     try {
       const token = this.jwtService.sign(JSON.stringify(obj));
       console.log(token,'token')
@@ -68,6 +68,7 @@ export class AuthService {
         msg: `登录成功`,
       };
     } catch (error) {
+      console.log(error,'error')
       return {
         code: 600,
         msg: `账号或密码错误`,
