@@ -6,7 +6,7 @@
 
 <script>
 	import props from "./props.js";
-	import Schema from "../..../../libs/util/async-validator.js/ 去除警告信息
+	import Schema from "../../libs/util/async-validator.js";
 	Schema.warning = function() {};
 	/**
 	 * Form 表单
