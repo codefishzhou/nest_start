@@ -35,19 +35,20 @@ jobs:
           publish_dir: ./web/dist/build/h5
           keep_files: true  # 保留已有文件
 
-      # - name: Install and Build
-      #   run: |
-      #     mv _config_deploy.yml _config.yml
-      #     mv public codefish
+      - name: Install and Build
+        run: |
+          mv _config_deploy.yml _config.yml
+          mv public codefish
 
-      # - name: FTP Deploy
-      #   uses: SamKirkland/FTP-Deploy-Action@4.0.0
-      #   with:
-      #     server: ${{ secrets.ftp_server }}
-      #     username: ${{ secrets.ftp_user }}
-      #     password: ${{ secrets.ftp_pwd }}
-      #     local-dir: ./codefish/
-      #     server-dir: /var/www/html/codefish/
-      #     dangerous-clean-slate: true
+      - name: FTP Deploy
+        if: github.ref == 'refs/heads/main' 
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ secrets.ftp_server }}
+          username: ${{ secrets.ftp_user }}
+          password: ${{ secrets.ftp_pwd }}
+          local-dir: ./dist/
+          server-dir: /var/www/html/nest_start/
+          dangerous-clean-slate: true
 
 
