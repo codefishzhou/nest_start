@@ -9,12 +9,13 @@
     "target": "es2017",
     "sourceMap": true,
     "outDir": "./dist",
-    "baseUrl": "./",
+    "baseUrl": ".",
     "incremental": true,
     "skipLibCheck": true,
     "paths": {
-      "@libs/db": ["libs/db/src"],
-      "@libs/db/*": ["libs/db/src/*"]
+      "@/*": ["src/*"],
+      "@utils/*": ["src/utils/*"],
+      "@entity/*": ["src/entity/*"]
     },
   }
 }

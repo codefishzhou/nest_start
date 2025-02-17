@@ -4,8 +4,10 @@ import {
   PrimaryGeneratedColumn,
   PrimaryColumn,
   CreateDateColumn,
+  OneToMany,
 } from 'typeorm';
 //   import { PhotoEntity } from '../photo/photo.entity';
+import { Message } from './message.entity';
 
 @Entity({ name: 'users' }) //数据表的名字
 export class UsersEntity {
@@ -23,4 +25,7 @@ export class UsersEntity {
 
   @Column({ length: 255,default: '1' })
   createDate: string;
+
+  @OneToMany(() => Message, (message) => message.receiver)
+  messages: Message[];
 }

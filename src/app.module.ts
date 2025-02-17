@@ -6,6 +6,7 @@ import { TypeOrmModule, type TypeOrmModuleOptions } from '@nestjs/typeorm';
 import { NodesModule } from './logical/nodes/nodes.module';
 import { AuthModule } from './logical/auth/auth.module';
 import { ConfigModule } from '@nestjs/config';
+import { WsModule } from './logical/ws/ws.module';
 import configuration from '../config/configuration';
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import configuration from '../config/configuration';
     UserModule,
     NodesModule,
     AuthModule,
+    WsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
