@@ -13,9 +13,16 @@ export class DevAuthGuard extends AuthGuard('jwt') {
       return true;
     }
     const request = context.switchToHttp().getRequest();
-    if (jwtConstants.authWhiteList.includes(request.path)) {
+    // 拼接全局前缀后的完整路径
+    const fullPath = `/worknotes${request.path}`;
+    
+    // 同时检查原始路径和带前缀路径
+    if (jwtConstants.authWhiteList.some(path => 
+      path === request.path || path === fullPath
+    )) {
       return true;
     }
+    
     return super.canActivate(context);
   }
 }

@@ -25,9 +25,7 @@ import { AuthGuard } from '@nestjs/passport';
     UserService,
     {
       provide: APP_GUARD,
-      useClass: process.env.NODE_ENV === 'development' 
-        ? DevAuthGuard 
-        : AuthGuard('jwt')
+      useClass: DevAuthGuard
     }
   ],
   exports: [AuthService],
