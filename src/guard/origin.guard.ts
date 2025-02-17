@@ -1,9 +1,10 @@
 import { CanActivate, ExecutionContext, Injectable } from '@nestjs/common';
 import { Request } from 'express';
+import { jwtConstants } from '../../config/auth';
 
 @Injectable()
 export class OriginGuard implements CanActivate {
-  private readonly whitelist = process.env.CORS_WHITELIST?.split(',') || [];
+  private readonly whitelist = process.env.CORS_WHITELIST?.split(',') || jwtConstants.authWhiteList;
 
   private compileRegex(origin: string): RegExp {
     return new RegExp(`^https?://${origin.replace('*.', '([a-z0-9-]+\\.)*')}$`);
