@@ -4,6 +4,7 @@ import { OriginGuard } from './guard/origin.guard';
 import { TransformInterceptor } from './logical/interceptor/transform.interceptor';
 
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
+import { Request, Response, NextFunction } from 'express';
 
 async function bootstrap() {
   // 根据环境变量判断
@@ -13,7 +14,18 @@ async function bootstrap() {
   !isDev &&app.useGlobalInterceptors(new TransformInterceptor()); // 全局注册拦截器
   // 全局注册守卫
   app.useGlobalGuards(new OriginGuard());
-  app.enableCors();
+  app.enableCors({
+    origin: process.env.CORS_WHITELIST?.split(',') || [],
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true
+  });
+  app.use((req: Request, res: Response, next: NextFunction) => {
+    if (req.method === 'OPTIONS') {
+      res.header('Access-Control-Max-Age', '86400');
+      return res.sendStatus(204);
+    }
+    next();
+  });
   const options = new DocumentBuilder()
     .setTitle('worknotes')
     .setDescription('供后台管理界面调用的服务端API')
