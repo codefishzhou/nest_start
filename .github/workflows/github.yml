@@ -21,7 +21,7 @@ jobs:
 
 
       - name: Install and Build
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/test'
         run: |
           cd web
           rm -rf node_modules pnpm-lock.yaml
@@ -30,7 +30,7 @@ jobs:
           npm run build:h5
 
       - name: Deploy to GitHub Pages
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/test'
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}
