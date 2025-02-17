@@ -23,7 +23,7 @@ jobs:
         run: |
           rm -rf node_modules package-lock.json
           npm i -g pnpm
-          npm install
+          npm install --legacy-peer-deps
           npm run build:prod
 
       - name: FTP Deploy server
