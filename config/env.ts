@@ -5,9 +5,9 @@ const isProd = process.env.NODE_ENV === 'production';
 
 function parseEnv() {
   // 引入文件
-  const localEnv = path.resolve('.env');
+  const localEnv = path.resolve('.env.development');
   // 引入线上环境文件
-  const prodEnv = path.resolve('.env.prod');
+  const prodEnv = path.resolve('.env.production');
 
   if (!fs.existsSync(localEnv) && !fs.existsSync(prodEnv)) {
     // throw new Error('缺少环境配置文件');
