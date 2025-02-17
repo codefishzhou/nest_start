@@ -1,3 +1,4 @@
+// 注册接口 /user/create
 export const jwtConstants = {
-  authWhiteList: ['/auth/login', '/auth/register'],
+  authWhiteList: ['/user/login', ''],
 };
