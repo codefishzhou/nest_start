@@ -5,9 +5,9 @@ on:
       - main
       - test
     paths:
-      - 'host/**' 
-      - 'echarts/**' 
       - '.github/**'
+      - 'web/**'
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
