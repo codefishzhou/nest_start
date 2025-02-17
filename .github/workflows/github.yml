@@ -37,7 +37,7 @@ jobs:
           username: ${{ secrets.ftp_user }}
           password: ${{ secrets.ftp_pwd }}
           local-dir: ./dist/
-          server-dir: /var/www/html/nest_start/
+          server-dir: /server/nest_start/
           dangerous-clean-slate: true
 
       - name: Install and Build
