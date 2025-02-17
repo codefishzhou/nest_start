@@ -96,6 +96,6 @@
     },
     "router" : {
         "mode" : "history",
-        "base" : "./"
+        "base" : "./nest_start/"
     }
 }
