@@ -9,7 +9,10 @@ import { ConfigModule } from '@nestjs/config';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: `.env.${process.env.NODE_ENV || 'development'}`,
+      envFilePath: [
+        `.env.${process.env.NODE_ENV}`,  // 显式指定可能的环境文件
+        '.env'                           // 添加默认fallback
+      ],
       isGlobal: true,
     }),
     TypeOrmModule.forRoot({
