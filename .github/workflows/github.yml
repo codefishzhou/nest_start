@@ -36,12 +36,16 @@ jobs:
           keep_files: true  # 保留已有文件
 
       - name: Install and Build
+        if: github.ref == 'refs/heads/test' 
         run: |
-          mv _config_deploy.yml _config.yml
-          mv public codefish
+          cd ../
+          rm -rf node_modules pnpm-lock.yaml
+          npm i -g pnpm
+          npm install
+          npm run build:prod
 
       - name: FTP Deploy
-        if: github.ref == 'refs/heads/main' 
+        if: github.ref == 'refs/heads/test' 
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ${{ secrets.ftp_server }}

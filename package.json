@@ -7,7 +7,7 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build NODE_ENV=production",
-    "builds": "nest build --webpack  NODE_ENV=production --webpackPath=./webpack.config.js",
+    "build:prod": "nest build --webpack  NODE_ENV=production --webpackPath=./webpack.config.js",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\" \"libs/**/*.ts\"",
     "start": "nest start",
     "start:dev": "cross-env NODE_ENV=development nest start --watch",
