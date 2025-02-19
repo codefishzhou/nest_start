@@ -48,3 +48,7 @@
 4. mysql数据库需要转换为utff-8,否则发送请求时候使用utf-8会报错
 
 spec.ts文件需要放在src目录下，否则会报错 , 自动化测试载体
+
+5. 生成静态文档文件
+npm install swagger-ui-dist
+main.ts文件需要修改

@@ -51,6 +51,7 @@ export class WsService {
    * @returns
    */
   async login(client: Socket, token: string): Promise<void> {
+    console.log('token: ', token)
     if (!token) {
       Logger.error('token error: ', token)
       client.send('token error')
