@@ -7,7 +7,7 @@ import { WsAuthGuard } from './ws-auth.guard';
 
 @UseGuards(WsAuthGuard)
 @WebSocketGateway({
-  port: 3050,
+  port: 3060,
   namespace: 'ws',
   cors: {
     origin: '*',
