@@ -1,6 +1,6 @@
 export default () => ({
   type: 'mysql',
-  host: 'localhost',
+  host: process.env.HOST,
   port: 3306,
   username: process.env.username,
   password: process.env.password,
