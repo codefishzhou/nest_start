@@ -40,10 +40,10 @@ export class AppModule implements NestModule {
   constructor(private readonly logger: Log4jsLogger) {}
 
   configure(consumer: MiddlewareConsumer) {
-    consumer
-      .apply(RequestLoggerMiddleware)
-      .forRoutes('*'); // 应用到所有路由
+    // consumer
+    //   .apply(RequestLoggerMiddleware)
+    //   .forRoutes('*'); // 应用到所有路由
       
-    this.logger.log('Request logger middleware initialized');
+    // this.logger.log('Request logger middleware initialized');
   }
 }
