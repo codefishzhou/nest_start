@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { Module, NestModule, MiddlewareConsumer } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UserModule } from './logical/user/user.module';
@@ -8,6 +8,11 @@ import { AuthModule } from './logical/auth/auth.module';
 import { ConfigModule } from '@nestjs/config';
 import { WsModule } from './logical/ws/ws.module';
 import configuration from '../config/configuration';
+import { Log4jsLogger } from './libs/log4js/logger.service';
+import { RequestLoggerMiddleware } from './middleware/request-logger.middleware';
+// import { ServeStaticModule } from '@nestjs/serve-static';
+import { join } from 'path';
+
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -22,8 +27,23 @@ import configuration from '../config/configuration';
     NodesModule,
     AuthModule,
     WsModule,
+    // ServeStaticModule.forRoot({
+    //   rootPath: join(__dirname, '..', 'node_modules', 'swagger-ui-dist'),
+    //   serveRoot: '/swagger-assets',
+    // }),
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService, Log4jsLogger],
+  exports: [Log4jsLogger]
 })
-export class AppModule {}
+export class AppModule implements NestModule {
+  constructor(private readonly logger: Log4jsLogger) {}
+
+  configure(consumer: MiddlewareConsumer) {
+    consumer
+      .apply(RequestLoggerMiddleware)
+      .forRoutes('*'); // 应用到所有路由
+      
+    this.logger.log('Request logger middleware initialized');
+  }
+}

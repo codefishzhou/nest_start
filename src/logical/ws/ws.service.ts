@@ -1,13 +1,13 @@
 import { Injectable } from '@nestjs/common';
 import { Server, Socket } from 'socket.io';
 import { Logger } from '@nestjs/common';
-import { WSResponse } from '../../message/model/ws-response.model';
+import { WSResponse } from '../../model/ws-response.model';
 import { validateToken } from '../../utils/jwt';
 import { Message } from '../../entity/message.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { UsersEntity } from '../../entity/users.entity';
-import { HashUtil } from '../../common/utils/hash.util';
+import { HashUtil } from '../../libs/hash.util';
 import { encryptPassword } from '../../utils/cryptogram';
 /**
  * 消息类型，0 用户消息, 1 系统消息，2 事务消息

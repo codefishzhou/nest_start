@@ -14,7 +14,7 @@ import { CreateUserDto } from './create-user-dto';
 import { DeleteUserDto } from './delete-user-dto';
 import { LoginUserDto } from './login-user-dto';
 import { encryptPassword } from '../../utils/cryptogram';
-import { HashUtil } from '../../common/utils/hash.util';
+import { HashUtil } from '../../libs/hash.util';
 
 
 @Injectable()

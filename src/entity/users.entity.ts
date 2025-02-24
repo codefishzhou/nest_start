@@ -23,7 +23,7 @@ export class UsersEntity {
   @Column({ length: 255,default: '1' })
   status: string;
 
-  @Column({ length: 255,default: '1' })
+  @Column({ length: 255,default: new Date() })
   createDate: string;
 
   @OneToMany(() => Message, (message) => message.receiver)

@@ -1,0 +1,371 @@
+[2025-02-24T22:42:29.258] [INFO] default - websocket init... port: 3060
+[2025-02-24T22:42:29.259] [INFO] default - AppController {/worknotes/app}:
+[2025-02-24T22:42:29.259] [INFO] default - UserController {/worknotes/user}:
+[2025-02-24T22:42:29.260] [INFO] default - Mapped {/worknotes/user/all, GET} route
+[2025-02-24T22:42:29.261] [INFO] default - Mapped {/worknotes/user/:id, GET} route
+[2025-02-24T22:42:29.261] [INFO] default - Mapped {/worknotes/user/create, POST} route
+[2025-02-24T22:42:29.261] [INFO] default - Mapped {/worknotes/user/find-by-name, POST} route
+[2025-02-24T22:42:29.261] [INFO] default - Mapped {/worknotes/user/login, POST} route
+[2025-02-24T22:42:29.261] [INFO] default - Mapped {/worknotes/user/verity, POST} route
+[2025-02-24T22:42:29.262] [INFO] default - Mapped {/worknotes/user/delete, DELETE} route
+[2025-02-24T22:42:29.262] [INFO] default - Mapped {/worknotes/user/:id, POST} route
+[2025-02-24T22:42:29.262] [INFO] default - NodesController {/worknotes/nodes}:
+[2025-02-24T22:42:29.262] [INFO] default - Mapped {/worknotes/nodes/create, POST} route
+[2025-02-24T22:42:29.263] [INFO] default - Mapped {/worknotes/nodes/all, GET} route
+[2025-02-24T22:42:29.263] [INFO] default - Mapped {/worknotes/nodes/get-by-month, POST} route
+[2025-02-24T22:42:29.263] [INFO] default - Mapped {/worknotes/nodes/export, POST} route
+[2025-02-24T22:42:29.263] [INFO] default - Mapped {/worknotes/nodes/delete, DELETE} route
+[2025-02-24T22:42:29.263] [INFO] default - Mapped {/worknotes/nodes/:id, POST} route
+[2025-02-24T22:42:29.264] [INFO] default - Nest application successfully started
+[2025-02-24T22:42:38.869] [INFO] default - websocket init... port: 3060
+[2025-02-24T22:42:38.870] [INFO] default - AppController {/worknotes/app}:
+[2025-02-24T22:42:38.870] [INFO] default - UserController {/worknotes/user}:
+[2025-02-24T22:42:38.871] [INFO] default - Mapped {/worknotes/user/all, GET} route
+[2025-02-24T22:42:38.872] [INFO] default - Mapped {/worknotes/user/:id, GET} route
+[2025-02-24T22:42:38.872] [INFO] default - Mapped {/worknotes/user/create, POST} route
+[2025-02-24T22:42:38.872] [INFO] default - Mapped {/worknotes/user/find-by-name, POST} route
+[2025-02-24T22:42:38.872] [INFO] default - Mapped {/worknotes/user/login, POST} route
+[2025-02-24T22:42:38.873] [INFO] default - Mapped {/worknotes/user/verity, POST} route
+[2025-02-24T22:42:38.873] [INFO] default - Mapped {/worknotes/user/delete, DELETE} route
+[2025-02-24T22:42:38.873] [INFO] default - Mapped {/worknotes/user/:id, POST} route
+[2025-02-24T22:42:38.873] [INFO] default - NodesController {/worknotes/nodes}:
+[2025-02-24T22:42:38.873] [INFO] default - Mapped {/worknotes/nodes/create, POST} route
+[2025-02-24T22:42:38.874] [INFO] default - Mapped {/worknotes/nodes/all, GET} route
+[2025-02-24T22:42:38.874] [INFO] default - Mapped {/worknotes/nodes/get-by-month, POST} route
+[2025-02-24T22:42:38.874] [INFO] default - Mapped {/worknotes/nodes/export, POST} route
+[2025-02-24T22:42:38.874] [INFO] default - Mapped {/worknotes/nodes/delete, DELETE} route
+[2025-02-24T22:42:38.874] [INFO] default - Mapped {/worknotes/nodes/:id, POST} route
+[2025-02-24T22:42:38.876] [INFO] default - Nest application successfully started
+[2025-02-24T22:43:39.467] [INFO] default - websocket init... port: 3060
+[2025-02-24T22:43:39.468] [INFO] default - AppController {/worknotes/app}:
+[2025-02-24T22:43:39.468] [INFO] default - UserController {/worknotes/user}:
+[2025-02-24T22:43:39.469] [INFO] default - Mapped {/worknotes/user/all, GET} route
+[2025-02-24T22:43:39.470] [INFO] default - Mapped {/worknotes/user/:id, GET} route
+[2025-02-24T22:43:39.470] [INFO] default - Mapped {/worknotes/user/create, POST} route
+[2025-02-24T22:43:39.470] [INFO] default - Mapped {/worknotes/user/find-by-name, POST} route
+[2025-02-24T22:43:39.470] [INFO] default - Mapped {/worknotes/user/login, POST} route
+[2025-02-24T22:43:39.471] [INFO] default - Mapped {/worknotes/user/verity, POST} route
+[2025-02-24T22:43:39.471] [INFO] default - Mapped {/worknotes/user/delete, DELETE} route
+[2025-02-24T22:43:39.471] [INFO] default - Mapped {/worknotes/user/:id, POST} route
+[2025-02-24T22:43:39.471] [INFO] default - NodesController {/worknotes/nodes}:
+[2025-02-24T22:43:39.471] [INFO] default - Mapped {/worknotes/nodes/create, POST} route
+[2025-02-24T22:43:39.472] [INFO] default - Mapped {/worknotes/nodes/all, GET} route
+[2025-02-24T22:43:39.472] [INFO] default - Mapped {/worknotes/nodes/get-by-month, POST} route
+[2025-02-24T22:43:39.472] [INFO] default - Mapped {/worknotes/nodes/export, POST} route
+[2025-02-24T22:43:39.472] [INFO] default - Mapped {/worknotes/nodes/delete, DELETE} route
+[2025-02-24T22:43:39.472] [INFO] default - Mapped {/worknotes/nodes/:id, POST} route
+[2025-02-24T22:43:39.473] [INFO] default - Nest application successfully started
+[2025-02-24T22:43:45.098] [INFO] default - websocket init... port: 3060
+[2025-02-24T22:43:45.100] [INFO] default - AppController {/worknotes/app}:
+[2025-02-24T22:43:45.100] [INFO] default - UserController {/worknotes/user}:
+[2025-02-24T22:43:45.101] [INFO] default - Mapped {/worknotes/user/all, GET} route
+[2025-02-24T22:43:45.101] [INFO] default - Mapped {/worknotes/user/:id, GET} route
+[2025-02-24T22:43:45.102] [INFO] default - Mapped {/worknotes/user/create, POST} route
+[2025-02-24T22:43:45.102] [INFO] default - Mapped {/worknotes/user/find-by-name, POST} route
+[2025-02-24T22:43:45.102] [INFO] default - Mapped {/worknotes/user/login, POST} route
+[2025-02-24T22:43:45.103] [INFO] default - Mapped {/worknotes/user/verity, POST} route
+[2025-02-24T22:43:45.103] [INFO] default - Mapped {/worknotes/user/delete, DELETE} route
+[2025-02-24T22:43:45.104] [INFO] default - Mapped {/worknotes/user/:id, POST} route
+[2025-02-24T22:43:45.104] [INFO] default - NodesController {/worknotes/nodes}:
+[2025-02-24T22:43:45.104] [INFO] default - Mapped {/worknotes/nodes/create, POST} route
+[2025-02-24T22:43:45.105] [INFO] default - Mapped {/worknotes/nodes/all, GET} route
+[2025-02-24T22:43:45.105] [INFO] default - Mapped {/worknotes/nodes/get-by-month, POST} route
+[2025-02-24T22:43:45.105] [INFO] default - Mapped {/worknotes/nodes/export, POST} route
+[2025-02-24T22:43:45.105] [INFO] default - Mapped {/worknotes/nodes/delete, DELETE} route
+[2025-02-24T22:43:45.105] [INFO] default - Mapped {/worknotes/nodes/:id, POST} route
+[2025-02-24T22:43:45.106] [INFO] default - Nest application successfully started
+[2025-02-24T22:43:47.090] [INFO] default - websocket init... port: 3060
+[2025-02-24T22:43:47.091] [INFO] default - AppController {/worknotes/app}:
+[2025-02-24T22:43:47.091] [INFO] default - UserController {/worknotes/user}:
+[2025-02-24T22:43:47.092] [INFO] default - Mapped {/worknotes/user/all, GET} route
+[2025-02-24T22:43:47.093] [INFO] default - Mapped {/worknotes/user/:id, GET} route
+[2025-02-24T22:43:47.093] [INFO] default - Mapped {/worknotes/user/create, POST} route
+[2025-02-24T22:43:47.093] [INFO] default - Mapped {/worknotes/user/find-by-name, POST} route
+[2025-02-24T22:43:47.093] [INFO] default - Mapped {/worknotes/user/login, POST} route
+[2025-02-24T22:43:47.093] [INFO] default - Mapped {/worknotes/user/verity, POST} route
+[2025-02-24T22:43:47.094] [INFO] default - Mapped {/worknotes/user/delete, DELETE} route
+[2025-02-24T22:43:47.094] [INFO] default - Mapped {/worknotes/user/:id, POST} route
+[2025-02-24T22:43:47.094] [INFO] default - NodesController {/worknotes/nodes}:
+[2025-02-24T22:43:47.094] [INFO] default - Mapped {/worknotes/nodes/create, POST} route
+[2025-02-24T22:43:47.095] [INFO] default - Mapped {/worknotes/nodes/all, GET} route
+[2025-02-24T22:43:47.095] [INFO] default - Mapped {/worknotes/nodes/get-by-month, POST} route
+[2025-02-24T22:43:47.095] [INFO] default - Mapped {/worknotes/nodes/export, POST} route
+[2025-02-24T22:43:47.095] [INFO] default - Mapped {/worknotes/nodes/delete, DELETE} route
+[2025-02-24T22:43:47.095] [INFO] default - Mapped {/worknotes/nodes/:id, POST} route
+[2025-02-24T22:43:47.096] [INFO] default - Nest application successfully started
+[2025-02-24T22:43:56.286] [INFO] default - websocket init... port: 3060
+[2025-02-24T22:43:56.287] [INFO] default - AppController {/worknotes/app}:
+[2025-02-24T22:43:56.288] [INFO] default - UserController {/worknotes/user}:
+[2025-02-24T22:43:56.289] [INFO] default - Mapped {/worknotes/user/all, GET} route
+[2025-02-24T22:43:56.289] [INFO] default - Mapped {/worknotes/user/:id, GET} route
+[2025-02-24T22:43:56.290] [INFO] default - Mapped {/worknotes/user/create, POST} route
+[2025-02-24T22:43:56.290] [INFO] default - Mapped {/worknotes/user/find-by-name, POST} route
+[2025-02-24T22:43:56.290] [INFO] default - Mapped {/worknotes/user/login, POST} route
+[2025-02-24T22:43:56.290] [INFO] default - Mapped {/worknotes/user/verity, POST} route
+[2025-02-24T22:43:56.290] [INFO] default - Mapped {/worknotes/user/delete, DELETE} route
+[2025-02-24T22:43:56.290] [INFO] default - Mapped {/worknotes/user/:id, POST} route
+[2025-02-24T22:43:56.291] [INFO] default - NodesController {/worknotes/nodes}:
+[2025-02-24T22:43:56.291] [INFO] default - Mapped {/worknotes/nodes/create, POST} route
+[2025-02-24T22:43:56.291] [INFO] default - Mapped {/worknotes/nodes/all, GET} route
+[2025-02-24T22:43:56.291] [INFO] default - Mapped {/worknotes/nodes/get-by-month, POST} route
+[2025-02-24T22:43:56.291] [INFO] default - Mapped {/worknotes/nodes/export, POST} route
+[2025-02-24T22:43:56.291] [INFO] default - Mapped {/worknotes/nodes/delete, DELETE} route
+[2025-02-24T22:43:56.291] [INFO] default - Mapped {/worknotes/nodes/:id, POST} route
+[2025-02-24T22:43:56.293] [INFO] default - Nest application successfully started
+[2025-02-24T22:43:57.579] [INFO] default - websocket init... port: 3060
+[2025-02-24T22:43:57.580] [INFO] default - AppController {/worknotes/app}:
+[2025-02-24T22:43:57.580] [INFO] default - UserController {/worknotes/user}:
+[2025-02-24T22:43:57.581] [INFO] default - Mapped {/worknotes/user/all, GET} route
+[2025-02-24T22:43:57.582] [INFO] default - Mapped {/worknotes/user/:id, GET} route
+[2025-02-24T22:43:57.582] [INFO] default - Mapped {/worknotes/user/create, POST} route
+[2025-02-24T22:43:57.582] [INFO] default - Mapped {/worknotes/user/find-by-name, POST} route
+[2025-02-24T22:43:57.582] [INFO] default - Mapped {/worknotes/user/login, POST} route
+[2025-02-24T22:43:57.583] [INFO] default - Mapped {/worknotes/user/verity, POST} route
+[2025-02-24T22:43:57.583] [INFO] default - Mapped {/worknotes/user/delete, DELETE} route
+[2025-02-24T22:43:57.583] [INFO] default - Mapped {/worknotes/user/:id, POST} route
+[2025-02-24T22:43:57.583] [INFO] default - NodesController {/worknotes/nodes}:
+[2025-02-24T22:43:57.583] [INFO] default - Mapped {/worknotes/nodes/create, POST} route
+[2025-02-24T22:43:57.584] [INFO] default - Mapped {/worknotes/nodes/all, GET} route
+[2025-02-24T22:43:57.584] [INFO] default - Mapped {/worknotes/nodes/get-by-month, POST} route
+[2025-02-24T22:43:57.584] [INFO] default - Mapped {/worknotes/nodes/export, POST} route
+[2025-02-24T22:43:57.584] [INFO] default - Mapped {/worknotes/nodes/delete, DELETE} route
+[2025-02-24T22:43:57.584] [INFO] default - Mapped {/worknotes/nodes/:id, POST} route
+[2025-02-24T22:43:57.586] [INFO] default - Nest application successfully started
+[2025-02-24T22:44:23.735] [INFO] default - websocket init... port: 3060
+[2025-02-24T22:44:23.737] [INFO] default - AppController {/worknotes/app}:
+[2025-02-24T22:44:23.737] [INFO] default - UserController {/worknotes/user}:
+[2025-02-24T22:44:23.738] [INFO] default - Mapped {/worknotes/user/all, GET} route
+[2025-02-24T22:44:23.738] [INFO] default - Mapped {/worknotes/user/:id, GET} route
+[2025-02-24T22:44:23.738] [INFO] default - Mapped {/worknotes/user/create, POST} route
+[2025-02-24T22:44:23.739] [INFO] default - Mapped {/worknotes/user/find-by-name, POST} route
+[2025-02-24T22:44:23.739] [INFO] default - Mapped {/worknotes/user/login, POST} route
+[2025-02-24T22:44:23.739] [INFO] default - Mapped {/worknotes/user/verity, POST} route
+[2025-02-24T22:44:23.739] [INFO] default - Mapped {/worknotes/user/delete, DELETE} route
+[2025-02-24T22:44:23.739] [INFO] default - Mapped {/worknotes/user/:id, POST} route
+[2025-02-24T22:44:23.740] [INFO] default - NodesController {/worknotes/nodes}:
+[2025-02-24T22:44:23.740] [INFO] default - Mapped {/worknotes/nodes/create, POST} route
+[2025-02-24T22:44:23.740] [INFO] default - Mapped {/worknotes/nodes/all, GET} route
+[2025-02-24T22:44:23.740] [INFO] default - Mapped {/worknotes/nodes/get-by-month, POST} route
+[2025-02-24T22:44:23.741] [INFO] default - Mapped {/worknotes/nodes/export, POST} route
+[2025-02-24T22:44:23.741] [INFO] default - Mapped {/worknotes/nodes/delete, DELETE} route
+[2025-02-24T22:44:23.741] [INFO] default - Mapped {/worknotes/nodes/:id, POST} route
+[2025-02-24T22:44:23.742] [INFO] default - Nest application successfully started
+[2025-02-24T22:44:26.555] [INFO] default - websocket init... port: 3060
+[2025-02-24T22:44:26.556] [INFO] default - AppController {/worknotes/app}:
+[2025-02-24T22:44:26.557] [INFO] default - UserController {/worknotes/user}:
+[2025-02-24T22:44:26.558] [INFO] default - Mapped {/worknotes/user/all, GET} route
+[2025-02-24T22:44:26.558] [INFO] default - Mapped {/worknotes/user/:id, GET} route
+[2025-02-24T22:44:26.558] [INFO] default - Mapped {/worknotes/user/create, POST} route
+[2025-02-24T22:44:26.558] [INFO] default - Mapped {/worknotes/user/find-by-name, POST} route
+[2025-02-24T22:44:26.559] [INFO] default - Mapped {/worknotes/user/login, POST} route
+[2025-02-24T22:44:26.559] [INFO] default - Mapped {/worknotes/user/verity, POST} route
+[2025-02-24T22:44:26.559] [INFO] default - Mapped {/worknotes/user/delete, DELETE} route
+[2025-02-24T22:44:26.559] [INFO] default - Mapped {/worknotes/user/:id, POST} route
+[2025-02-24T22:44:26.560] [INFO] default - NodesController {/worknotes/nodes}:
+[2025-02-24T22:44:26.560] [INFO] default - Mapped {/worknotes/nodes/create, POST} route
+[2025-02-24T22:44:26.560] [INFO] default - Mapped {/worknotes/nodes/all, GET} route
+[2025-02-24T22:44:26.560] [INFO] default - Mapped {/worknotes/nodes/get-by-month, POST} route
+[2025-02-24T22:44:26.561] [INFO] default - Mapped {/worknotes/nodes/export, POST} route
+[2025-02-24T22:44:26.561] [INFO] default - Mapped {/worknotes/nodes/delete, DELETE} route
+[2025-02-24T22:44:26.561] [INFO] default - Mapped {/worknotes/nodes/:id, POST} route
+[2025-02-24T22:44:26.562] [INFO] default - Nest application successfully started
+[2025-02-24T22:45:41.660] [INFO] default - websocket init... port: 3060
+[2025-02-24T22:45:41.661] [INFO] default - AppController {/worknotes/app}:
+[2025-02-24T22:45:41.661] [INFO] default - UserController {/worknotes/user}:
+[2025-02-24T22:45:41.662] [INFO] default - Mapped {/worknotes/user/all, GET} route
+[2025-02-24T22:45:41.663] [INFO] default - Mapped {/worknotes/user/:id, GET} route
+[2025-02-24T22:45:41.663] [INFO] default - Mapped {/worknotes/user/create, POST} route
+[2025-02-24T22:45:41.663] [INFO] default - Mapped {/worknotes/user/find-by-name, POST} route
+[2025-02-24T22:45:41.663] [INFO] default - Mapped {/worknotes/user/login, POST} route
+[2025-02-24T22:45:41.664] [INFO] default - Mapped {/worknotes/user/verity, POST} route
+[2025-02-24T22:45:41.664] [INFO] default - Mapped {/worknotes/user/delete, DELETE} route
+[2025-02-24T22:45:41.664] [INFO] default - Mapped {/worknotes/user/:id, POST} route
+[2025-02-24T22:45:41.664] [INFO] default - NodesController {/worknotes/nodes}:
+[2025-02-24T22:45:41.664] [INFO] default - Mapped {/worknotes/nodes/create, POST} route
+[2025-02-24T22:45:41.665] [INFO] default - Mapped {/worknotes/nodes/all, GET} route
+[2025-02-24T22:45:41.665] [INFO] default - Mapped {/worknotes/nodes/get-by-month, POST} route
+[2025-02-24T22:45:41.666] [INFO] default - Mapped {/worknotes/nodes/export, POST} route
+[2025-02-24T22:45:41.666] [INFO] default - Mapped {/worknotes/nodes/delete, DELETE} route
+[2025-02-24T22:45:41.666] [INFO] default - Mapped {/worknotes/nodes/:id, POST} route
+[2025-02-24T22:45:41.668] [INFO] default - Nest application successfully started
+[2025-02-24T22:45:58.599] [INFO] default - websocket init... port: 3060
+[2025-02-24T22:45:58.601] [INFO] default - AppController {/worknotes/app}:
+[2025-02-24T22:45:58.601] [INFO] default - UserController {/worknotes/user}:
+[2025-02-24T22:45:58.602] [INFO] default - Mapped {/worknotes/user/all, GET} route
+[2025-02-24T22:45:58.602] [INFO] default - Mapped {/worknotes/user/:id, GET} route
+[2025-02-24T22:45:58.603] [INFO] default - Mapped {/worknotes/user/create, POST} route
+[2025-02-24T22:45:58.603] [INFO] default - Mapped {/worknotes/user/find-by-name, POST} route
+[2025-02-24T22:45:58.603] [INFO] default - Mapped {/worknotes/user/login, POST} route
+[2025-02-24T22:45:58.603] [INFO] default - Mapped {/worknotes/user/verity, POST} route
+[2025-02-24T22:45:58.603] [INFO] default - Mapped {/worknotes/user/delete, DELETE} route
+[2025-02-24T22:45:58.603] [INFO] default - Mapped {/worknotes/user/:id, POST} route
+[2025-02-24T22:45:58.604] [INFO] default - NodesController {/worknotes/nodes}:
+[2025-02-24T22:45:58.604] [INFO] default - Mapped {/worknotes/nodes/create, POST} route
+[2025-02-24T22:45:58.604] [INFO] default - Mapped {/worknotes/nodes/all, GET} route
+[2025-02-24T22:45:58.604] [INFO] default - Mapped {/worknotes/nodes/get-by-month, POST} route
+[2025-02-24T22:45:58.604] [INFO] default - Mapped {/worknotes/nodes/export, POST} route
+[2025-02-24T22:45:58.604] [INFO] default - Mapped {/worknotes/nodes/delete, DELETE} route
+[2025-02-24T22:45:58.605] [INFO] default - Mapped {/worknotes/nodes/:id, POST} route
+[2025-02-24T22:45:58.606] [INFO] default - Nest application successfully started
+[2025-02-24T22:51:11.866] [INFO] default - websocket init... port: 3060
+[2025-02-24T22:51:11.866] [INFO] default - Request logger middleware initialized
+[2025-02-24T22:51:11.867] [INFO] default - AppController {/worknotes/app}:
+[2025-02-24T22:51:11.867] [INFO] default - UserController {/worknotes/user}:
+[2025-02-24T22:51:11.868] [INFO] default - Mapped {/worknotes/user/all, GET} route
+[2025-02-24T22:51:11.869] [INFO] default - Mapped {/worknotes/user/:id, GET} route
+[2025-02-24T22:51:11.869] [INFO] default - Mapped {/worknotes/user/create, POST} route
+[2025-02-24T22:51:11.869] [INFO] default - Mapped {/worknotes/user/find-by-name, POST} route
+[2025-02-24T22:51:11.870] [INFO] default - Mapped {/worknotes/user/login, POST} route
+[2025-02-24T22:51:11.870] [INFO] default - Mapped {/worknotes/user/verity, POST} route
+[2025-02-24T22:51:11.870] [INFO] default - Mapped {/worknotes/user/delete, DELETE} route
+[2025-02-24T22:51:11.870] [INFO] default - Mapped {/worknotes/user/:id, POST} route
+[2025-02-24T22:51:11.870] [INFO] default - NodesController {/worknotes/nodes}:
+[2025-02-24T22:51:11.871] [INFO] default - Mapped {/worknotes/nodes/create, POST} route
+[2025-02-24T22:51:11.871] [INFO] default - Mapped {/worknotes/nodes/all, GET} route
+[2025-02-24T22:51:11.871] [INFO] default - Mapped {/worknotes/nodes/get-by-month, POST} route
+[2025-02-24T22:51:11.871] [INFO] default - Mapped {/worknotes/nodes/export, POST} route
+[2025-02-24T22:51:11.871] [INFO] default - Mapped {/worknotes/nodes/delete, DELETE} route
+[2025-02-24T22:51:11.871] [INFO] default - Mapped {/worknotes/nodes/:id, POST} route
+[2025-02-24T22:51:11.873] [INFO] default - Nest application successfully started
+[2025-02-24T22:51:13.442] [INFO] default - websocket init... port: 3060
+[2025-02-24T22:51:13.443] [INFO] default - Request logger middleware initialized
+[2025-02-24T22:51:13.444] [INFO] default - AppController {/worknotes/app}:
+[2025-02-24T22:51:13.444] [INFO] default - UserController {/worknotes/user}:
+[2025-02-24T22:51:13.446] [INFO] default - Mapped {/worknotes/user/all, GET} route
+[2025-02-24T22:51:13.446] [INFO] default - Mapped {/worknotes/user/:id, GET} route
+[2025-02-24T22:51:13.446] [INFO] default - Mapped {/worknotes/user/create, POST} route
+[2025-02-24T22:51:13.446] [INFO] default - Mapped {/worknotes/user/find-by-name, POST} route
+[2025-02-24T22:51:13.446] [INFO] default - Mapped {/worknotes/user/login, POST} route
+[2025-02-24T22:51:13.447] [INFO] default - Mapped {/worknotes/user/verity, POST} route
+[2025-02-24T22:51:13.447] [INFO] default - Mapped {/worknotes/user/delete, DELETE} route
+[2025-02-24T22:51:13.447] [INFO] default - Mapped {/worknotes/user/:id, POST} route
+[2025-02-24T22:51:13.447] [INFO] default - NodesController {/worknotes/nodes}:
+[2025-02-24T22:51:13.448] [INFO] default - Mapped {/worknotes/nodes/create, POST} route
+[2025-02-24T22:51:13.448] [INFO] default - Mapped {/worknotes/nodes/all, GET} route
+[2025-02-24T22:51:13.448] [INFO] default - Mapped {/worknotes/nodes/get-by-month, POST} route
+[2025-02-24T22:51:13.448] [INFO] default - Mapped {/worknotes/nodes/export, POST} route
+[2025-02-24T22:51:13.448] [INFO] default - Mapped {/worknotes/nodes/delete, DELETE} route
+[2025-02-24T22:51:13.449] [INFO] default - Mapped {/worknotes/nodes/:id, POST} route
+[2025-02-24T22:51:13.450] [INFO] default - Nest application successfully started
+[2025-02-24T22:51:19.448] [INFO] default - websocket init... port: 3060
+[2025-02-24T22:51:19.449] [INFO] default - Request logger middleware initialized
+[2025-02-24T22:51:19.451] [INFO] default - AppController {/worknotes/app}:
+[2025-02-24T22:51:19.451] [INFO] default - UserController {/worknotes/user}:
+[2025-02-24T22:51:19.452] [INFO] default - Mapped {/worknotes/user/all, GET} route
+[2025-02-24T22:51:19.452] [INFO] default - Mapped {/worknotes/user/:id, GET} route
+[2025-02-24T22:51:19.453] [INFO] default - Mapped {/worknotes/user/create, POST} route
+[2025-02-24T22:51:19.453] [INFO] default - Mapped {/worknotes/user/find-by-name, POST} route
+[2025-02-24T22:51:19.453] [INFO] default - Mapped {/worknotes/user/login, POST} route
+[2025-02-24T22:51:19.453] [INFO] default - Mapped {/worknotes/user/verity, POST} route
+[2025-02-24T22:51:19.453] [INFO] default - Mapped {/worknotes/user/delete, DELETE} route
+[2025-02-24T22:51:19.454] [INFO] default - Mapped {/worknotes/user/:id, POST} route
+[2025-02-24T22:51:19.454] [INFO] default - NodesController {/worknotes/nodes}:
+[2025-02-24T22:51:19.454] [INFO] default - Mapped {/worknotes/nodes/create, POST} route
+[2025-02-24T22:51:19.454] [INFO] default - Mapped {/worknotes/nodes/all, GET} route
+[2025-02-24T22:51:19.454] [INFO] default - Mapped {/worknotes/nodes/get-by-month, POST} route
+[2025-02-24T22:51:19.455] [INFO] default - Mapped {/worknotes/nodes/export, POST} route
+[2025-02-24T22:51:19.455] [INFO] default - Mapped {/worknotes/nodes/delete, DELETE} route
+[2025-02-24T22:51:19.455] [INFO] default - Mapped {/worknotes/nodes/:id, POST} route
+[2025-02-24T22:51:19.456] [INFO] default - Nest application successfully started
+[2025-02-24T22:51:25.230] [INFO] default - websocket init... port: 3060
+[2025-02-24T22:51:25.230] [INFO] default - Request logger middleware initialized
+[2025-02-24T22:51:25.232] [INFO] default - AppController {/worknotes/app}:
+[2025-02-24T22:51:25.232] [INFO] default - UserController {/worknotes/user}:
+[2025-02-24T22:51:25.233] [INFO] default - Mapped {/worknotes/user/all, GET} route
+[2025-02-24T22:51:25.233] [INFO] default - Mapped {/worknotes/user/:id, GET} route
+[2025-02-24T22:51:25.234] [INFO] default - Mapped {/worknotes/user/create, POST} route
+[2025-02-24T22:51:25.234] [INFO] default - Mapped {/worknotes/user/find-by-name, POST} route
+[2025-02-24T22:51:25.234] [INFO] default - Mapped {/worknotes/user/login, POST} route
+[2025-02-24T22:51:25.234] [INFO] default - Mapped {/worknotes/user/verity, POST} route
+[2025-02-24T22:51:25.235] [INFO] default - Mapped {/worknotes/user/delete, DELETE} route
+[2025-02-24T22:51:25.235] [INFO] default - Mapped {/worknotes/user/:id, POST} route
+[2025-02-24T22:51:25.235] [INFO] default - NodesController {/worknotes/nodes}:
+[2025-02-24T22:51:25.235] [INFO] default - Mapped {/worknotes/nodes/create, POST} route
+[2025-02-24T22:51:25.236] [INFO] default - Mapped {/worknotes/nodes/all, GET} route
+[2025-02-24T22:51:25.236] [INFO] default - Mapped {/worknotes/nodes/get-by-month, POST} route
+[2025-02-24T22:51:25.236] [INFO] default - Mapped {/worknotes/nodes/export, POST} route
+[2025-02-24T22:51:25.236] [INFO] default - Mapped {/worknotes/nodes/delete, DELETE} route
+[2025-02-24T22:51:25.236] [INFO] default - Mapped {/worknotes/nodes/:id, POST} route
+[2025-02-24T22:51:25.237] [INFO] default - Nest application successfully started
+[2025-02-24T22:51:28.735] [INFO] default - websocket init... port: 3060
+[2025-02-24T22:51:28.736] [INFO] default - Request logger middleware initialized
+[2025-02-24T22:51:28.738] [INFO] default - AppController {/worknotes/app}:
+[2025-02-24T22:51:28.738] [INFO] default - UserController {/worknotes/user}:
+[2025-02-24T22:51:28.739] [INFO] default - Mapped {/worknotes/user/all, GET} route
+[2025-02-24T22:51:28.739] [INFO] default - Mapped {/worknotes/user/:id, GET} route
+[2025-02-24T22:51:28.740] [INFO] default - Mapped {/worknotes/user/create, POST} route
+[2025-02-24T22:51:28.740] [INFO] default - Mapped {/worknotes/user/find-by-name, POST} route
+[2025-02-24T22:51:28.740] [INFO] default - Mapped {/worknotes/user/login, POST} route
+[2025-02-24T22:51:28.740] [INFO] default - Mapped {/worknotes/user/verity, POST} route
+[2025-02-24T22:51:28.740] [INFO] default - Mapped {/worknotes/user/delete, DELETE} route
+[2025-02-24T22:51:28.741] [INFO] default - Mapped {/worknotes/user/:id, POST} route
+[2025-02-24T22:51:28.741] [INFO] default - NodesController {/worknotes/nodes}:
+[2025-02-24T22:51:28.741] [INFO] default - Mapped {/worknotes/nodes/create, POST} route
+[2025-02-24T22:51:28.741] [INFO] default - Mapped {/worknotes/nodes/all, GET} route
+[2025-02-24T22:51:28.741] [INFO] default - Mapped {/worknotes/nodes/get-by-month, POST} route
+[2025-02-24T22:51:28.741] [INFO] default - Mapped {/worknotes/nodes/export, POST} route
+[2025-02-24T22:51:28.742] [INFO] default - Mapped {/worknotes/nodes/delete, DELETE} route
+[2025-02-24T22:51:28.742] [INFO] default - Mapped {/worknotes/nodes/:id, POST} route
+[2025-02-24T22:51:28.743] [INFO] default - Nest application successfully started
+[2025-02-24T22:52:51.536] [INFO] default - websocket init... port: 3060
+[2025-02-24T22:52:51.537] [INFO] default - Request logger middleware initialized
+[2025-02-24T22:52:51.538] [INFO] default - AppController {/worknotes/app}:
+[2025-02-24T22:52:51.538] [INFO] default - UserController {/worknotes/user}:
+[2025-02-24T22:52:51.539] [INFO] default - Mapped {/worknotes/user/all, GET} route
+[2025-02-24T22:52:51.540] [INFO] default - Mapped {/worknotes/user/:id, GET} route
+[2025-02-24T22:52:51.540] [INFO] default - Mapped {/worknotes/user/create, POST} route
+[2025-02-24T22:52:51.540] [INFO] default - Mapped {/worknotes/user/find-by-name, POST} route
+[2025-02-24T22:52:51.540] [INFO] default - Mapped {/worknotes/user/login, POST} route
+[2025-02-24T22:52:51.540] [INFO] default - Mapped {/worknotes/user/verity, POST} route
+[2025-02-24T22:52:51.541] [INFO] default - Mapped {/worknotes/user/delete, DELETE} route
+[2025-02-24T22:52:51.541] [INFO] default - Mapped {/worknotes/user/:id, POST} route
+[2025-02-24T22:52:51.541] [INFO] default - NodesController {/worknotes/nodes}:
+[2025-02-24T22:52:51.541] [INFO] default - Mapped {/worknotes/nodes/create, POST} route
+[2025-02-24T22:52:51.541] [INFO] default - Mapped {/worknotes/nodes/all, GET} route
+[2025-02-24T22:52:51.541] [INFO] default - Mapped {/worknotes/nodes/get-by-month, POST} route
+[2025-02-24T22:52:51.542] [INFO] default - Mapped {/worknotes/nodes/export, POST} route
+[2025-02-24T22:52:51.542] [INFO] default - Mapped {/worknotes/nodes/delete, DELETE} route
+[2025-02-24T22:52:51.542] [INFO] default - Mapped {/worknotes/nodes/:id, POST} route
+[2025-02-24T22:52:51.543] [INFO] default - Nest application successfully started
+[2025-02-24T22:53:13.339] [INFO] default - websocket init... port: 3060
+[2025-02-24T22:53:13.340] [INFO] default - Request logger middleware initialized
+[2025-02-24T22:53:13.342] [INFO] default - AppController {/worknotes/app}:
+[2025-02-24T22:53:13.342] [INFO] default - UserController {/worknotes/user}:
+[2025-02-24T22:53:13.343] [INFO] default - Mapped {/worknotes/user/all, GET} route
+[2025-02-24T22:53:13.343] [INFO] default - Mapped {/worknotes/user/:id, GET} route
+[2025-02-24T22:53:13.343] [INFO] default - Mapped {/worknotes/user/create, POST} route
+[2025-02-24T22:53:13.343] [INFO] default - Mapped {/worknotes/user/find-by-name, POST} route
+[2025-02-24T22:53:13.343] [INFO] default - Mapped {/worknotes/user/login, POST} route
+[2025-02-24T22:53:13.344] [INFO] default - Mapped {/worknotes/user/verity, POST} route
+[2025-02-24T22:53:13.344] [INFO] default - Mapped {/worknotes/user/delete, DELETE} route
+[2025-02-24T22:53:13.344] [INFO] default - Mapped {/worknotes/user/:id, POST} route
+[2025-02-24T22:53:13.344] [INFO] default - NodesController {/worknotes/nodes}:
+[2025-02-24T22:53:13.344] [INFO] default - Mapped {/worknotes/nodes/create, POST} route
+[2025-02-24T22:53:13.345] [INFO] default - Mapped {/worknotes/nodes/all, GET} route
+[2025-02-24T22:53:13.345] [INFO] default - Mapped {/worknotes/nodes/get-by-month, POST} route
+[2025-02-24T22:53:13.345] [INFO] default - Mapped {/worknotes/nodes/export, POST} route
+[2025-02-24T22:53:13.345] [INFO] default - Mapped {/worknotes/nodes/delete, DELETE} route
+[2025-02-24T22:53:13.345] [INFO] default - Mapped {/worknotes/nodes/:id, POST} route
+[2025-02-24T22:53:13.346] [INFO] default - Nest application successfully started
+[2025-02-24T22:54:34.837] [INFO] default - [POST] /worknotes/user/verity from ::1 - Started
+[2025-02-24T22:54:34.855] [INFO] default - [POST] /worknotes/user/verity - 200 19ms - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+[2025-02-24T22:54:55.769] [INFO] default - websocket init... port: 3060
+[2025-02-24T22:54:55.770] [INFO] default - Request logger middleware initialized
+[2025-02-24T22:54:55.772] [INFO] default - AppController {/worknotes/app}:
+[2025-02-24T22:54:55.772] [INFO] default - UserController {/worknotes/user}:
+[2025-02-24T22:54:55.773] [INFO] default - Mapped {/worknotes/user/all, GET} route
+[2025-02-24T22:54:55.773] [INFO] default - Mapped {/worknotes/user/:id, GET} route
+[2025-02-24T22:54:55.773] [INFO] default - Mapped {/worknotes/user/create, POST} route
+[2025-02-24T22:54:55.773] [INFO] default - Mapped {/worknotes/user/find-by-name, POST} route
+[2025-02-24T22:54:55.774] [INFO] default - Mapped {/worknotes/user/login, POST} route
+[2025-02-24T22:54:55.774] [INFO] default - Mapped {/worknotes/user/verity, POST} route
+[2025-02-24T22:54:55.774] [INFO] default - Mapped {/worknotes/user/delete, DELETE} route
+[2025-02-24T22:54:55.774] [INFO] default - Mapped {/worknotes/user/:id, POST} route
+[2025-02-24T22:54:55.774] [INFO] default - NodesController {/worknotes/nodes}:
+[2025-02-24T22:54:55.775] [INFO] default - Mapped {/worknotes/nodes/create, POST} route
+[2025-02-24T22:54:55.775] [INFO] default - Mapped {/worknotes/nodes/all, GET} route
+[2025-02-24T22:54:55.775] [INFO] default - Mapped {/worknotes/nodes/get-by-month, POST} route
+[2025-02-24T22:54:55.775] [INFO] default - Mapped {/worknotes/nodes/export, POST} route
+[2025-02-24T22:54:55.775] [INFO] default - Mapped {/worknotes/nodes/delete, DELETE} route
+[2025-02-24T22:54:55.775] [INFO] default - Mapped {/worknotes/nodes/:id, POST} route
+[2025-02-24T22:54:55.777] [INFO] default - Nest application successfully started
