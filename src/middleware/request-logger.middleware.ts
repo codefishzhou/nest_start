@@ -2,11 +2,24 @@ import { Injectable, NestMiddleware } from '@nestjs/common';
 import { Request, Response, NextFunction } from 'express';
 import { Log4jsLogger } from '../libs/log4js/logger.service';
 
+// 扩展Request类型
+interface CustomRequest extends Request {
+  ip: string;
+  originalUrl: string;
+  headers: Record<string, string>;
+}
+
+// 扩展Response类型
+interface CustomResponse extends Response {
+  // on(event: 'finish', listener: () => void): this;
+  statusCode: number;
+}
+
 @Injectable()
 export class RequestLoggerMiddleware implements NestMiddleware {
   constructor(private readonly logger: Log4jsLogger) {}
 
-  use(req: Request, res: Response, next: NextFunction) {
+  use(req: CustomRequest, res: CustomResponse, next: () => void) {
     const start = Date.now();
     const { method, originalUrl, ip, headers } = req;
 
