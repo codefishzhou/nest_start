@@ -1,4 +1,3 @@
-
 export default () => ({
   type: 'mysql',
   host: process.env.HOST,
