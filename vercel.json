@@ -7,10 +7,9 @@
       }
     ],
     "functions": {
-      "src/main.ts": {
-        "memory": 800,
-        "maxDuration": 30
-      }
+    "src/main.ts": {
+      "memory": 800,
+      "maxDuration": 10
     },
     "routes": [
       {
