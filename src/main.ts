@@ -9,13 +9,13 @@ async function bootstrap() {
   // 根据环境变量判断
   const isDev = process.env.NODE_ENV === 'development';
   const app = await NestFactory.create(AppModule);
-  app.setGlobalPrefix('worknotes');
+  app.setGlobalPrefix(process.env.SERVER_PREFIX);
   !isDev &&app.useGlobalInterceptors(new TransformInterceptor()); // 全局注册拦截器
   // 全局注册守卫
   app.useGlobalGuards(new OriginGuard());
   app.enableCors();
   const options = new DocumentBuilder()
-    .setTitle('worknotes')
+    .setTitle(process.env.SERVER_PREFIX)
     .setDescription('供后台管理界面调用的服务端API')
     .setVersion('1.0')
     .build();
